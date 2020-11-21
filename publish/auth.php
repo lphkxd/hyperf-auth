@@ -25,6 +25,7 @@ return [
         'guard' => 'jwt',
         'provider' => 'users',
     ],
+    'header_name' => 'Authorization', //默认头部token使用的字段
     'guards' => [
         'jwt' => [
             'driver' => Qbhy\HyperfAuth\Guard\JwtGuard::class,
